@@ -1,1 +1,18 @@
 /* nav */
+nav {
+  ul {
+    font-size:    14px;
+    text-align:   center;
+    width:        100%;
+    display:      table;
+    table-layout: fixed;
+
+    li {
+      background-color: $color_accent;
+      display:          table-cell;
+      &:hover {
+        background-color: $color_accent * 1.10;
+      }
+    }
+  }
+}
