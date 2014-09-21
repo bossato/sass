@@ -1,0 +1,16 @@
+$color_main:   #d35400;
+$color_accent: #f39c12;
+$color_bg:     #ecf0f1;
+$color_text:   #2c3e50;
+$color_header: #ecf0f1;
+
+$contact_num: 2;
+
+@mixin circle($radius: 150px) {
+  width:                 $radius;
+  height:                $radius;
+  background-color:      $color_accent;
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}border-radius: $radius / 2;
+  }
+}
