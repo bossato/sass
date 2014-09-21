@@ -4,6 +4,8 @@ $color_bg:     #ecf0f1;
 $color_text:   #2c3e50;
 $color_header: #ecf0f1;
 
+$contact_num: 2;
+
 @mixin circle($radius: 150px) {
   width:                 $radius;
   height:                $radius;

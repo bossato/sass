@@ -138,17 +138,29 @@ article section {
   border-bottom: 1px solid;
 }
 article section:last-child {
-  border: none;
+  border-bottom: none;
 }
 article section h2 {
   font-size: 16px;
   color: #ce5505;
 }
-article #features ul, article #updates ul {
-  list-style: none;
-}
 article #features ul {
   font-weight: bold;
+  font-size: 20px;
+  list-style: none;
+}
+article #updates ul {
+  list-style: none;
+}
+article #updates ul li {
+  border-bottom: 1px solid;
+}
+article #updates ul li:last-child {
+  border-bottom: none;
+}
+article #updates .date {
+  font-weight: bold;
+  color: #ce5505;
 }
 article #contact {
   width: 150px;
@@ -163,6 +175,7 @@ article #contact {
 article #contact .developers {
   display: table;
   table-layout: fixed;
+  margin: 25% 0;
 }
 article #contact .developers .developer1 {
   text-align: center;

@@ -10,7 +10,7 @@ article {
     margin:        20px;
     border-bottom: 1px solid;
     &:last-child {
-      border: none;
+      border-bottom: none;
     }
 
     h2 {
@@ -19,15 +19,28 @@ article {
     }
   }
 
-  #features, #updates {
+  #features {
     ul {
+      font-weight: bold;
+      font-size:   20px;
       list-style:  none;
     }
   }
 
-  #features {
+  #updates {
     ul {
+      list-style:  none;
+      li {
+        border-bottom: 1px solid;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .date {
       font-weight: bold;
+      color:       desaturate($color_main, 5%);
     }
   }
 
@@ -37,7 +50,8 @@ article {
     .developers {
       display:      table;
       table-layout: fixed;
-      @for $i from 1 through 2 {
+      margin:       25% 0;
+      @for $i from 1 through $contact_num {
         .developer#{$i} {
           text-align: center;
           display:    table-cell;
